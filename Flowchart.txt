@@ -2,7 +2,7 @@
 
 
             +---------+   Greetings   +---------------+      Text input                 +-------------------------------+   
-            | EmoBot  |-------------->| Input Module  |-------------------------------->| Emotion Classification Module |                  
+            |CheerBot |-------------->| Input Module  |-------------------------------->| Emotion Classification Module |                  
             +---------+               +---------------+           |                     +-------------------------------+                         
                                                                   | Stop keyword                      |
                                                                   v                                   | Emotion category
