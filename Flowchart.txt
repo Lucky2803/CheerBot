@@ -1,0 +1,41 @@
+
+
+
+            +---------+   Greetings   +---------------+      Text input                 +-------------------------------+   
+            | EmoBot  |-------------->| Input Module  |-------------------------------->| Emotion Classification Module |                  
+            +---------+               +---------------+           |                     +-------------------------------+                         
+                                                                  | Stop keyword                      |
+                                                                  v                                   | Emotion category
+                                                            +---------------------+                   v
+                                                            |    Graceful Exit    |     +----------------------------+
+                                                            +---------------------+     | Response Generation Module |
+                                                                                        +----------------------------+
+                                                                                                      |
+                                                                                                      | Tailored response
+                                                                                                      v
+                                                                                        +---------------------+
+                                                                                        |   Output Module     |
+                                                                                        +---------------------+
+                                                                                                 
+
+    Input Module:
+        The chatbot starts with a greeting message, "Hey user! How may I assist you?"
+        The user provides input speech signals.
+        The speech recognizer converts the input speech signals into text.
+        The autocorrector module corrects any spelling or grammatical errors in the input text.
+	   Upon receiving a stop keyword, the chatbot exits gracefully by saying, "Thank you for using the chatbot. Exiting program...".
+	   Stop Keyword: {'stop', 'quit', 'exit', 'end', 'bye', 'goodbye', 'close'}
+
+    Emotion Classification Module:
+        The corrected input text is passed to a fine-tuned Roberta Classifier.
+        The classifier identifies the emotion of the input text and classifies it into one of the five categories: Surprise, Happy, Sad, Anger, and Fear.
+
+    Response Generation Module:
+        The emotion category and input text are passed to a generator (GPT-3.5 Davinci 002).
+        The generator produces a tailored response based on the emotion category and input text.
+
+    Output Module:
+        The chatbot delivers the tailored response to the user.
+        The process continues until the chatbot receives one of the stop keywords
+   
+
