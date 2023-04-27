@@ -1,14 +1,15 @@
 
 
 
+
             +---------+   Greetings   +---------------+      Text input                 +-------------------------------+   
             |CheerBot |-------------->| Input Module  |-------------------------------->| Emotion Classification Module |                  
-            +---------+               +---------------+           |                     +-------------------------------+                         
-                                                                  | Stop keyword                      |
-                                                                  v                                   | Emotion category
-                                                            +---------------------+                   v
-                                                            |    Graceful Exit    |     +----------------------------+
-                                                            +---------------------+     | Response Generation Module |
+            +---------+               +---------------+          |                 |     +-------------------------------+                         
+                                                                 | Stop keyword    |                  |
+                                                                 v                 |                  | Emotion category
+                                                        +---------------------+    |                  v
+                                                        |    Graceful Exit    |    |    +----------------------------+
+                                                        +---------------------+    ---->| Response Generation Module |
                                                                                         +----------------------------+
                                                                                                       |
                                                                                                       | Tailored response
