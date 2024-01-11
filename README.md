@@ -10,3 +10,5 @@ The corrected input text is then passed to the Emotion Classification Module, wh
 The Response Generation Module takes the emotion category and input text as inputs and passes them to a generator (GPT-3.5 Davinci 002), which produces a tailored response based on the input text and the emotion category. The generator produces a response that is appropriate to the identified emotion of the input text.
 
 Finally, the Output Module delivers the tailored response to the user. The process continues until the chatbot receives one of the stop keywords.
+
+UPDATE: GPT3.5 API has been replaced with PALM2 API for response generation as the former API has been closed-sourced.
