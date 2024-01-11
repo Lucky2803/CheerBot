@@ -12,3 +12,4 @@ The Response Generation Module takes the emotion category and input text as inpu
 Finally, the Output Module delivers the tailored response to the user. The process continues until the chatbot receives one of the stop keywords.
 
 UPDATE: GPT3.5 API has been replaced with PALM2 API for response generation as the former API has been closed-sourced.
+THE FREE API KEYS that have been leaked in the code are updated and hence not guaranteed to work!
